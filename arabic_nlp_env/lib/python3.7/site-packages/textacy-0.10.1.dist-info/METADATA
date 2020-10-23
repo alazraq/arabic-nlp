@@ -1,0 +1,89 @@
+Metadata-Version: 2.1
+Name: textacy
+Version: 0.10.1
+Summary: NLP, before and after spaCy
+Home-page: https://github.com/chartbeat-labs/textacy
+Maintainer: Burton DeWilde
+Maintainer-email: burtdewilde@gmail.com
+License: Apache
+Project-URL: Documentation, https://textacy.readthedocs.io
+Project-URL: Source Code, https://github.com/chartbeat-labs/textacy
+Project-URL: Bug Tracker, https://github.com/chartbeat-labs/textacy/issues
+Keywords: spacy,nlp,text processing,linguistics
+Platform: UNKNOWN
+Classifier: Development Status :: 4 - Beta
+Classifier: License :: OSI Approved :: Apache Software License
+Classifier: Intended Audience :: Developers
+Classifier: Intended Audience :: Science/Research
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Programming Language :: Python :: 3.6
+Classifier: Programming Language :: Python :: 3.7
+Classifier: Programming Language :: Python :: 3.8
+Classifier: Natural Language :: English
+Classifier: Topic :: Text Processing :: Linguistic
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+Requires-Dist: cachetools (>=2.0.1)
+Requires-Dist: cytoolz (>=0.8.0)
+Requires-Dist: jellyfish (>=0.7.0)
+Requires-Dist: joblib (>=0.13.0)
+Requires-Dist: networkx (>=2.0)
+Requires-Dist: numpy (>=1.17.0)
+Requires-Dist: pyemd (>=0.5.0)
+Requires-Dist: pyphen (>=0.9.4)
+Requires-Dist: requests (>=2.10.0)
+Requires-Dist: scipy (>=0.17.0)
+Requires-Dist: scikit-learn (<0.24.0,>=0.19.0)
+Requires-Dist: spacy (<3.0.0,>=2.2.0)
+Requires-Dist: srsly (>=0.0.5)
+Requires-Dist: tqdm (>=4.19.6)
+Provides-Extra: dev
+Requires-Dist: black (<20.8b0,>=19.0b0) ; extra == 'dev'
+Requires-Dist: flake8 (>=3.8.0) ; extra == 'dev'
+Requires-Dist: mypy (>=0.600) ; extra == 'dev'
+Requires-Dist: recommonmark (<0.7.0,>=0.6.0) ; extra == 'dev'
+Requires-Dist: sphinx (<4.0.0,>=3.0.0) ; extra == 'dev'
+Requires-Dist: pytest (>=6.0.0) ; extra == 'dev'
+Requires-Dist: pytest-cov (>=2.6.0) ; extra == 'dev'
+Requires-Dist: twine (>=3.0.0) ; extra == 'dev'
+Requires-Dist: wheel (>=0.33.5) ; extra == 'dev'
+Provides-Extra: viz
+Requires-Dist: matplotlib (>=1.5.0) ; extra == 'viz'
+
+## textacy: NLP, before and after spaCy
+
+`textacy` is a Python library for performing a variety of natural language processing (NLP) tasks, built on the high-performance spaCy library. With the fundamentals --- tokenization, part-of-speech tagging, dependency parsing, etc. --- delegated to another library, `textacy` focuses primarily on the tasks that come before and follow after.
+
+[![build status](https://img.shields.io/travis/chartbeat-labs/textacy/master.svg?style=flat-square)](https://travis-ci.org/chartbeat-labs/textacy)
+[![current release version](https://img.shields.io/github/release/chartbeat-labs/textacy.svg?style=flat-square)](https://github.com/chartbeat-labs/textacy/releases)
+[![pypi version](https://img.shields.io/pypi/v/textacy.svg?style=flat-square)](https://pypi.python.org/pypi/textacy)
+[![conda version](https://anaconda.org/conda-forge/textacy/badges/version.svg)](https://anaconda.org/conda-forge/textacy)
+
+### features
+
+- Access spaCy through convenient methods for working with one or many documents and extend its functionality through custom extensions and automatic language identification for applying the right spaCy pipeline for the text
+- Download datasets with both text content and metadata, from Congressional speeches to historical literature to Reddit comments
+- Easily stream data to and from disk in many common formats
+- Clean, normalize, and explore raw text — before processing it with spaCy
+- Flexibly extract words, n-grams, noun chunks, entities, acronyms, key terms, and other elements of interest from processed documents
+- Compare strings, sets, and documents by a variety of similarity metrics
+- Tokenize and vectorize documents then train, interpret, and visualize topic models
+- Compute a variety of text readability statistics, including Flesch-Kincaid grade level, SMOG index, and multi-lingual Flesch Reading Ease
+
+... *and more!*
+
+### links
+
+- Download: https://pypi.org/project/textacy
+- Documentation: https://textacy.readthedocs.io
+- Source code: https://github.com/chartbeat-labs/textacy
+- Bug Tracker: https://github.com/chartbeat-labs/textacy/issues
+
+### maintainer
+
+Howdy, y'all. 👋
+
+- Burton DeWilde (<burton@chartbeat.com>)
+
+

@@ -4,3 +4,7 @@
 .training.1600000.processed.noemoticon.csv.icloud
 
 .ipynb_checkpoints/
+
+*.pyc
+
+*.icloud

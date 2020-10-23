@@ -4,7 +4,7 @@ import re
 import string
 import nltk
 import unicodedata #defines the character properties for all unicode characters
-from textacy import preprocess #bibliothèque pour preprocess des données textuelle
+from textacy import preprocessing #bibliothèque pour preprocess des données textuelle
 from nltk.tokenize import word_tokenize
 from nltk.corpus import stopwords
 from nltk.stem import PorterStemmer
@@ -233,7 +233,7 @@ class PreprocessData():
             self.text = re.sub("گ", "ك", self.text)
         
         if self.language == 'english' : 
-            self.text = preprocess.unpack_contractions(self.text)  # replace English contractions with their unshortened forms -> I'm -> I am
+            self.text = preprocessing.unpack_contractions(self.text)  # replace English contractions with their unshortened forms -> I'm -> I am
             
         pattern = r'\s+' # replace one or more spacings with a single space, and one or more linebreaks with a single newline.
         self.text = re.sub(pattern,' ',self.text)
